@@ -239,21 +239,11 @@
         </layout>
        </item>
        <item>
-        <widget class="QRadioButton" name="m_pRadioExternalConfig">
-         <property name="text">
-          <string>Use existing configuration:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
         <layout class="QHBoxLayout">
          <item>
-          <widget class="QLabel" name="m_pLabelConfigurationFile">
+          <widget class="QRadioButton" name="m_pRadioExternalConfig">
            <property name="text">
-            <string>&amp;Configuration file:</string>
-           </property>
-           <property name="buddy">
-            <cstring>m_pLineEditConfigFile</cstring>
+            <string>Use existing configuration:</string>
            </property>
           </widget>
          </item>
