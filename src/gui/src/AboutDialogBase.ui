@@ -50,15 +50,10 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>&lt;p&gt;
-Keyboard and mouse sharing application. Cross platform and open source.&lt;br /&gt;&lt;br /&gt;
-Copyright © 2012-2016 Symless Ltd.&lt;br /&gt;
-Copyright © 2002-2012 Chris Schoeneman, Nick Bolton, Volker Lanz.&lt;br /&gt;&lt;br /&gt;
-Synergy is released under the GNU General Public License (GPLv2).&lt;br /&gt;&lt;br /&gt;
-Synergy is based on CosmoSynergy by Richard Lee and Adam Feder.&lt;br /&gt;
-The Synergy GUI is based on QSynergy by Volker Lanz.&lt;br /&gt;&lt;br /&gt;
-Visit our website for help and info (symless.com).
-&lt;/p&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Keyboard and mouse sharing application. Move your mouse from one computer to another!&lt;br/&gt;&lt;br/&gt;Copyright © 2012-2017 Symless Ltd.&lt;br/&gt;Copyright © 2002-2012 Chris Schoeneman, Nick Bolton, Volker Lanz.&lt;br/&gt;&lt;br/&gt;Synergy is based on CosmoSynergy, by Richard Lee and Adam Feder, and is released under the GNU General Public License (GPLv2). The Synergy GUI is based on QSynergy by Volker Lanz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
      </property>
      <property name="margin">
       <number>1</number>
@@ -87,7 +82,7 @@ Visit our website for help and info (symless.com).
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="Synergy.qrc">:/res/image/about.png</pixmap>
+      <pixmap>:/res/image/about.png</pixmap>
      </property>
      <property name="margin">
       <number>0</number>
