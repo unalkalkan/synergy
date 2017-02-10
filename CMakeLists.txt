@@ -36,8 +36,12 @@ endif()
 # First, declare project (important for prerequisite checks).
 project(synergy C CXX)
 
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
-set (CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+  set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bundle/Synergy.app/Contents/MacOS")
+else()
+  set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+  set (CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+endif()
 
 # Set some easy to type variables.
 set(root_dir ${CMAKE_SOURCE_DIR})
