@@ -17,9 +17,12 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Are you sure?
+      <string>&lt;b&gt;Are you sure?&lt;/b&gt;
 
-If you don't activate Synergy you'll be missing out on some great features.</string>
+&lt;p&gt;If you don't activate Synergy you'll be missing out on some great features.&lt;/p&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
