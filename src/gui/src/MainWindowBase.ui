@@ -135,7 +135,7 @@
     <item>
      <widget class="QGroupBox" name="m_pGroupServer">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -287,7 +287,7 @@
     <item>
      <widget class="QGroupBox" name="m_pGroupClient">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -301,25 +301,8 @@
       <property name="checked">
        <bool>true</bool>
       </property>
-      <layout class="QFormLayout" name="formLayout_3">
-       <property name="fieldGrowthPolicy">
-        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-       </property>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Screen Name:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="m_pLabelScreenName">
-         <property name="text">
-          <string notr="true"/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" rowspan="3">
         <widget class="QLabel" name="m_pLabelServerName">
          <property name="text">
           <string>&amp;Server IP:</string>
@@ -329,10 +312,27 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
+       <item row="0" column="1" rowspan="3">
         <widget class="QLineEdit" name="m_pLineEditHostname"/>
        </item>
-       <item row="2" column="1">
+       <item row="2" column="3">
+        <widget class="QCheckBox" name="m_pCheckBoxAutoConfig">
+         <property name="text">
+          <string>Auto config</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Screen Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="m_pLineEditScreenName"/>
+       </item>
+       <item row="2" column="4">
         <widget class="QComboBox" name="m_pComboServerList">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -348,18 +348,17 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QCheckBox" name="m_pCheckBoxAutoConfig">
-         <property name="text">
-          <string>Auto config</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="m_pGroupLog">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="title">
        <string>Log</string>
       </property>

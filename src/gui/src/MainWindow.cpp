@@ -112,7 +112,7 @@ MainWindow::MainWindow(QSettings& settings, AppConfig& appConfig,
 
     m_pWidgetUpdate->hide();
     m_VersionChecker.setApp(appPath(appConfig.synergycName()));
-    m_pLabelScreenName->setText(getScreenName());
+    m_pLineEditScreenName->setText(getScreenName());
     m_pLabelIpAddresses->setText(getIPAddresses());
 
 #if defined(Q_OS_WIN)
