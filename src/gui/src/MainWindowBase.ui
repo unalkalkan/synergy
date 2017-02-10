@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>643</width>
     <height>550</height>
    </rect>
   </property>
@@ -138,7 +138,7 @@
        </sizepolicy>
       </property>
       <property name="title">
-       <string>Ser&amp;ver (share this computer's mouse and keyboard):</string>
+       <string>Ser&amp;ver (Share this computers mouse and keyboard):</string>
       </property>
       <property name="checkable">
        <bool>true</bool>
@@ -148,18 +148,15 @@
       </property>
       <layout class="QVBoxLayout">
        <item>
-        <layout class="QFormLayout" name="formLayout">
-         <property name="fieldGrowthPolicy">
-          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
-         </property>
-         <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
           <widget class="QLabel" name="label_2">
            <property name="text">
-            <string>IP addresses:</string>
+            <string>IP Addresses:</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="1">
+         <item>
           <widget class="QLabel" name="m_pLabelIpAddresses">
            <property name="text">
             <string notr="true"/>
@@ -284,7 +281,7 @@
        </sizepolicy>
       </property>
       <property name="title">
-       <string>&amp;Client (use another computer's mouse and keyboard):</string>
+       <string>&amp;Client (Use another computers mouse and keyboard):</string>
       </property>
       <property name="checkable">
        <bool>true</bool>
@@ -310,7 +307,7 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
+       <item row="1" column="0">
         <widget class="QLabel" name="m_pLabelServerName">
          <property name="text">
           <string>&amp;Server IP:</string>
@@ -320,17 +317,17 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
+       <item row="1" column="1">
         <widget class="QLineEdit" name="m_pLineEditHostname"/>
        </item>
-       <item row="3" column="0">
+       <item row="2" column="0">
         <widget class="QCheckBox" name="m_pCheckBoxAutoConfig">
          <property name="text">
           <string>Auto config</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
+       <item row="2" column="1">
         <widget class="QComboBox" name="m_pComboServerList">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -354,6 +351,9 @@
       <property name="title">
        <string>Log</string>
       </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QTextEdit" name="m_pLogOutput">
@@ -371,11 +371,14 @@
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
          <property name="undoRedoEnabled">
           <bool>false</bool>
          </property>
          <property name="lineWrapMode">
-          <enum>QTextEdit::NoWrap</enum>
+          <enum>QTextEdit::WidgetWidth</enum>
          </property>
          <property name="readOnly">
           <bool>true</bool>
